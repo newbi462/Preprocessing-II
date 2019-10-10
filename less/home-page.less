@@ -122,10 +122,25 @@ header {
   }
 }
 
-.content-destination {
+.home .content-destination {
   @media @mobile {
-    margin: 0;
-//    width: 100%;
+    width: 100%;
+    h2 {
+      margin: 1em 0 0 0;
+    }
+  }
+}
 
+.home .content-pick {
+  @media @mobile {
+    flex-flow: column;
+    justify-content: center;
+    .destination {
+      width: 80%;
+      margin: 0 auto 30px auto;
+      btn {
+        padding: 1em;
+      }
+    }
   }
 }

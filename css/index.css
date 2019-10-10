@@ -318,8 +318,24 @@ header div h2 {
   }
 }
 @media (max-width: 500px) {
-  .content-destination {
-    margin: 0;
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-destination h2 {
+    margin: 1em 0 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 30px auto;
+  }
+  .home .content-pick .destination btn {
+    padding: 1em;
   }
 }
 /*
