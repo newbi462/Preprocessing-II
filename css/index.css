@@ -253,6 +253,9 @@ header h1 {
 header div {
   display: flex;
 }
+header div h2 {
+  padding-top: 0.5em;
+}
 /*
 variables.less
 .less
