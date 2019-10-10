@@ -1,7 +1,6 @@
 // Navigation Styles here
 header nav {
   width: 100%;
-  float: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -11,6 +10,13 @@ header nav {
     color: @font-color;
     font-size: 1.6rem;
     padding: 0 0 0 40px;
+  }
+  @media @mobile {
+    justify-content: space-around;
+    padding: 0;
+    a {
+      padding: 0;
+    }
   }
 }
 

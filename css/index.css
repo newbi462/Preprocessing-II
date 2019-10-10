@@ -171,7 +171,6 @@ img {
 }
 header nav {
   width: 100%;
-  float: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -182,6 +181,15 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 0 0 0 40px;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: space-around;
+    padding: 0;
+  }
+  header nav a {
+    padding: 0;
+  }
 }
 /*bussons bottom*/
 .destination .btn {
@@ -266,6 +274,53 @@ header div {
 }
 header div h2 {
   padding-top: 0.5em;
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header div {
+    flex-flow: column wrap;
+  }
+}
+/*Mvbile Site Changes*/
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container .content-section {
+    margin: 0;
+    padding: 0;
+  }
+  .container .content-section .text-content {
+    width: 100%;
+  }
+  .container .content-section .img-content {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  .container .content-section .img-content img {
+    width: 100%;
+  }
+  .container .content-section .item1 {
+    order: 1;
+  }
+  .container .content-section .item2 {
+    order: 2;
+  }
+  .container .content-section .item3 {
+    order: 3;
+  }
+  .container .content-section .item4 {
+    order: 4;
+  }
+}
+@media (max-width: 500px) {
+  .content-destination {
+    margin: 0;
+  }
 }
 /*
 variables.less

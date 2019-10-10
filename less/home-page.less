@@ -77,4 +77,55 @@ header {
       padding-top: 0.5em;
     }
   }
+  @media @mobile {
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+    div {
+      flex-flow: column wrap;
+    }
+  }
+}
+
+/*Mvbile Site Changes*/
+.container {
+  @media @mobile {
+    width: 90%;
+    margin: 0 auto;
+    .content-section {
+      margin: 0;
+      padding: 0;
+      .text-content {
+        width: 100%;
+      }
+      .img-content {
+        width: 100%;
+        padding: 0 0 30px 0;
+        img {
+          width: 100%;
+        }
+      }
+      .item1 {
+        order: 1;
+      }
+      .item2 {
+        order: 2;
+      }
+      .item3 {
+        order: 3;
+      }
+      .item4 {
+        order: 4;
+      }
+    }
+  }
+}
+
+.content-destination {
+  @media @mobile {
+    margin: 0;
+//    width: 100%;
+
+  }
 }
