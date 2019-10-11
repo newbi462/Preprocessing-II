@@ -1,1 +1,32 @@
 // Navigation Styles here
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+  a {
+    text-decoration: none;
+    color: @font-color;
+    font-size: 1.6rem;
+    padding: 0 0 0 40px;
+  }
+  @media @mobile {
+    justify-content: space-around;
+    padding: 0;
+    a {
+      padding: 0;
+    }
+  }
+}
+
+/*bussons bottom*/
+.destination .btn {
+  .btnparametricmixin(@button-bg,0.5em,10px,@button-col,100%,center,2.0rem)
+//  background: @button-bg;
+//  padding: 0.5em;
+//  border-radius: 10px;
+//  color: @button-col;
+//  text-align: center;
+//  font-size: 2.0rem;
+}
